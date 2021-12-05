@@ -1,0 +1,276 @@
+body{
+    margin: 0;
+} 
+
+
+/*------- HEADER -----------*/
+
+
+.parallax{
+    background: url('pageheaders.jpg');
+    height:max-content;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2{
+    background: url('BG.jpg');
+    height:max-content;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pagetitle{
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    color: white;
+    padding: 50px;
+    font-variant: small-caps;
+    font-size: 100px;
+    letter-spacing: 20px;
+}
+
+
+/*------- NAV Bar Fix On top----------- */
+
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/* MENU CONTENT */
+.menu{
+    background:green;
+    text-align: center;
+
+}
+.menu-ul{
+    margin:0;
+    padding: 0;
+    display: inline;
+}
+.menu-ul li{
+    font-size: 17px;
+    list-style: none;
+    display: inline-block;
+    padding: 25px 25px 26px 25px;
+}
+.a-menu,.a-links{
+    text-decoration: none;
+    color: white;
+}
+.menu-ul li:hover{
+    background-color: yellowgreen;
+    transform: scale(1.1);
+    
+}
+
+/* --------Search box -----------*/
+
+.search-box{
+    border:1px solid white;
+    border-radius:50px;
+    background:white;
+    width:max-content;
+    display: inline-block;
+    margin: 8px;
+}
+.search-box:hover{
+    box-shadow: 0 0 10px 2px #5b8c5a;
+    
+}
+
+.search-input{
+    width: 250px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background:transparent;
+    margin: 2px 0 0 10px;
+}
+#search{
+    font-size: 20px;
+    padding-right: 20px;
+}
+button{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+/* -------Container-------- */
+
+.container{
+    margin: 50px 50px 50px 5%;
+    width: 90%;
+    text-align: center;
+}
+
+.categories,.items{
+    width: max-content;
+    margin: 25px;
+    border: 1px solid #184d47;
+    border-radius: 0 0 50px 50px;
+    display: inline-block;
+}
+.categories:hover, .items:hover{
+    box-shadow: 0 0 10px 3px #184d47;
+}
+.item-image{
+    height: 200px;
+    width: 200px;
+    border-radius: 0 0 50px 50px;
+    padding:10px;
+}
+.image-title{
+    text-align: center;
+    padding:10px;
+    font-weight: bold;
+    font-size: large;
+    color: blue;
+    border-radius: 0 0 50px 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*-------- DEALS---------- */
+.deals-cont{
+    text-align: center;
+}
+.title{
+    padding: 50px;
+    font-size: 50px;
+    letter-spacing: 10px;
+    color:white;
+    background:rgba(0,0,0,0.6);    
+}
+.deal{
+    padding: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 20px;
+    max-width: 20%;
+    background: linear-gradient(120deg,lightgreen 20%,darkgreen 50%, rgb(164, 248, 7) 80%);
+}
+.cpn-btn{
+    border:1px solid white;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.cpn-btn:hover{
+    box-shadow: 0 0 10px 5px white inset;
+}
+/*-------- Veges----------- */
+.images{
+    display: inline-block;
+}
+.item-img{
+    height: 200px;
+    width: 300px;
+    padding: 5px;
+}
+.descri{
+    margin:20px;
+    min-height: 100px;
+}
+.item-sel{
+    margin: 10px 0 0 0;
+    display: inline;
+    width: 20%;
+
+}
+.buybtn{
+    border:1px solid #184d47;
+    background:#184d47;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+.buybtn:hover{
+    border:1px solid #5b8c5a;
+    box-shadow: 0 0 10px 5px lightgreen inset;
+}
+
+/* ------Footer-------- */
+
+.parallax3{
+    background-image: url('footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:max-content;
+
+}
+.footer{
+    background: rgba(0,0,0,0.5);    
+    padding: 30px 20px 30px 10px;
+    
+}
+.links{
+    
+    color: white;
+    font-size: 15px;
+    display: inline-block;
+    
+}
+.links ul{
+    padding: 0;
+    text-align: left;
+}
+
+.copyrights{
+    font-size: 16px;
+    font-family: Verdana, Arial, Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+    background-color: #184d47;
+    color: white;
+}
+.links2{
+    display: inline-block;
+    position: absolute;
+    right: 18vw;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    
+    }
+.conform button{
+    color: white;
+    background: black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    
+    
+}
+.conform button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 1px blanchedalmond;
+    
+}
+
+input[type=email]{
+    width: 25.5vw;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 11px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding:5px;
+
+}
+.conform textarea{
+    width:25vw;
+    border-radius: 10px;
+    padding:5px;
+}

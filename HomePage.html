@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shopping</title>
+</head>
+<link rel="stylesheet" href="HomePage.css">
+<link rel="stylesheet" href="cart.css">
+<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+<script src="Cart.js" async></script>
+<!-- function for sticky -->
+<script>
+    function stickyMenu() {
+        var sticky = document.getElementById('sticky');
+        if (window.pageYOffset > 220) {
+            sticky.classList.add('sticky');
+        }
+        else {
+            sticky.classList.remove('sticky');
+        }
+    }
+    window.onscroll = function () {
+        stickyMenu();
+    }
+</script>
+
+<body>
+    <!-- HEADER  -->
+    <div class="parallax">
+        <div class="pagetitle">Grocery Shop</div>
+    </div>
+    <div class="menu" id="sticky">
+        <ul class="menu-ul">
+            <a href="#" class="a-menu">
+                <li>Home</li>
+            </a>
+            <a href="#deals" class="a-menu">
+                <li>Daily Needs</li>
+            </a>
+            <a href="#veg" class="a-menu">
+                <li>Vegetables</li>
+            </a>
+            <a href="#fruit" class="a-menu">
+                <li>Fruits</li>
+            </a>
+            <a href="#meat" class="a-menu">
+                <li>Drinks</li>
+            </a>
+            <a href="#cart" class="a-menu">
+                <li><i class="fa fa-shopping-cart"></i></li>
+            </a>
+        </ul>
+       
+    </div>
+    <!--Main WebPage  -->
+    <div class="container">
+        <a href="#veg">
+            <div class="categories">
+                <img src="Items\Veg\vegetables.jpg" class="item-image">
+                <div class="image-title">Vegetables</div>
+            </div>
+        </a>
+        <a href="#fruit">
+            <div class="categories">
+                <img src="Items\Fruits\fruits.webp" class="item-image">
+                <div class="image-title">Fruits</div>
+            </div>
+        </a>
+        <a href="#meat">
+            <div class="categories">
+                <img src="daily needs\poster.webp" class="item-image">
+                <div class="image-title">Drinks</div>
+            </div>
+        </a>
+        <a href="#deals">
+            <div class="categories">
+                <img src="daily needs\drinks.jpg" class="item-image">
+                <div class="image-title">Daily needs</div>
+            </div>
+        </a>
+    </div>
+    <!-- DAily Section -->
+    <div class="deals-cont" id="deals">
+        <div class="parallax2">
+            <div class="title">Daily Essentials</div>
+        </div>
+
+        <!-- bread -->
+
+        <div class="items">
+            <div class="images">
+                <img src="daily needs\bread.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <div class="name"><b>Bread</b></div>
+                Price :<div class="item-sel">₹32</div>/packet
+                
+                <br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Butter -->
+        <div class="items">
+
+            <div class="images">
+                <img src="daily needs\butter.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <div class="name"><b>Butter</b></div>
+                Price :<div class="item-sel"> 	₹51</div>/500gm
+                
+                <br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+        <!-- Eggs -->
+        <div class="items">
+            <div class="images">
+                <img src="daily needs\egg.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <div class="name"><b>Eggs</b></div>
+                Price :<div class="item-sel"> 	₹5</div>/per
+                <br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+        <!-- Jam -->
+        <div class="items">
+            <div class="images">
+                <img src="daily needs\jam.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <div class="name"><b>Mixed Jam</b></div>
+                Price :<div class="item-sel"> 	₹110</div>/Kg
+                <br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>        
+    
+    <!-- Oats -->
+    <div class="items">
+        <div class="images">
+            <img src="daily needs\oats.jpg" class="item-img">
+        </div>
+        <div class="descri">
+            <div class="name"><b>Safolla Oats</b></div>
+            Price : <div class="item-sel">	₹210</div>/Kg
+            <br />
+            <button class="buybtn">Buy Now</button>
+        </div>
+    </div>     
+        <!-- Jam -->
+<div class="items">
+    <div class="images">
+        <img src="daily needs\peanuts.webp" class="item-img">
+    </div>
+    <div class="descri">
+        <div class="name"><b>Peanut</b></div>
+        Price :<div class="item-sel"> ₹80</div>/Kg
+        <br />
+        <button class="buybtn">Buy Now</button>
+    </div>
+    </div>
+</div>   
+
+        
+</div>
+    
+    <!-- Veg Section -->
+    <div class="deals-cont" id="veg">
+        <div class="parallax2">
+            <div class="title">VEGETABLES</div>
+        </div>
+
+        <!-- PITATo -->
+
+        <div class="items">
+            <div class="images">
+                <img src="Items\Veg\potato.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <div class="name"><b>Potato</b></div>
+                Price :<div class="item-sel"> 	₹45</div>/Kg
+                <br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Brinjal -->
+        <div class="items">
+
+            <div class="images">
+                <img src="Items\Veg\brinjal.jfif" class="item-img">
+            </div>
+            <div class="descri">
+                <div class="name"><b>Eggplant</b></div>
+                Price :<div class="item-sel"> 	₹30</div>/Kg
+                <br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+        <!-- Onion -->
+        <div class="items">
+            <div class="images">
+                <img src="Items\Veg\onion.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <div class="name"><b>Onion</b></div>
+                Price :<div class="item-sel"> 	₹40</div>/Kg
+                <br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+        <!-- Spinach -->
+        <div class="items">
+            <div class="images">
+                <img src="Items\Veg\spinach.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <div class="name"><b>Spinach</b></div>
+                Price :<div class="item-sel"> ₹30</div>/Kg
+                <br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- Fruits Section -->
+    <div class="deals-cont" id="fruit">
+        <div class="parallax2">
+            <div class="title">FRUITS</div>
+        </div>
+
+        <!-- Apple -->
+
+        <div class="items">
+            <div class="images">
+                <img src="Items\Fruits\apple.png" class="item-img">
+            </div>
+            <div class="descri">
+                <div class="name"><b>Apple</b></div>
+                Price :<div class="item-sel"> ₹120</div>/Kg
+                <br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Banana -->
+        <div class="items">
+
+            <div class="images">
+                <img src="Items\Fruits\banana.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <div class="name"><b>Banana</b></div>
+                Price :<div class="item-sel"> 	₹60</div>/dozen
+                <br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+        <!-- Anaar -->
+        <div class="items">
+            <div class="images">
+                <img src="daily needs\pomegranate.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <div class="name"><b>Pomegranate</b></div>
+                Price :<div class="item-sel"> ₹200</div>/Kg
+                <br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+        <!-- Strawberry -->
+        <div class="items">
+            <div class="images">
+                <img src="Items\Fruits\stawberry.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <div class="name"><b>Strawberry</b></div>
+                
+                Price :<div class="item-sel"> ₹240</div>/Kg
+                <br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>        
+    </div>
+    <!-- Drinks -->
+    
+
+    <div class="deals-cont" id="meat">
+        <div class="parallax2">
+            <div class="title">Drinks</div>
+        </div>
+
+        <!-- Milk -->
+
+        <div class="items">
+            <div class="images">
+                <img src="daily needs\Milk.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <div class="name"><b>Milk</b></div>
+                Price :<div class="item-sel"> 	₹35</div>/pkt
+               <br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Coffee -->
+        <div class="items">
+
+            <div class="images">
+                <img src="daily needs\coffee.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <div class="name"><b>Coffee</b></div>
+                Price :<div class="item-sel"> 	₹400</div>/Kg
+                <br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>
+        <!-- Cold Drink -->
+        <div class="items">
+            <div class="images">
+                <img src="daily needs\drinkscold.jpg" class="item-img">
+            </div>
+            <div class="descri">
+                <div class="name"><b>Cold Drink</b></div>
+                Price :<div class="item-sel">₹75</div>/litre
+                <br />
+                <button class="buybtn">Buy Now</button>
+            </div>
+        </div>        
+    </div>
+<!-- ---------Cart-------- -->
+    <div class="deals-cont" id="cart">
+        <div class="parallax2">
+            <div class="title">YOUR CART <i class="fa fa-shopping-cart"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">₹0</span>
+    </div>
+    <button class="purchase-btn" type="button">PURCHASE</button>
+
+
+
+    <!-- FOOTER -->
+    <div class="parallax3">
+        <div class="footer">
+            <div class="links" style="margin-left: 15vw;">
+                <div style="text-align: center;font-size:29px;font-weight: bolder;">
+                    About Us</div>
+                <ul style="color: rgba(255, 250, 250, 0.726);">
+                    Our website guarantess fast and clean Delivery of grocery items.<br> 
+                    Keeping in mind the present santizing of our agents and your items.<br><br>
+                    Have a nice Meal! .
+
+                </ul>
+            </div> 
+            <div class="links2">
+                <div style="text-align: center;">Contact US</div>
+                <div class="conform" style="font-weight: lighter;">
+                    <br>
+                    <i class="fas fa-envelope"></i>&nbsp;&nbsp;abcxyz@gmail.com
+                    <br><br>
+                    <i class="fas fa-phone"></i>&nbsp;&nbsp;+91 7546891202
+                </div>
+            </div>
+                
+            
+        </div>
+    </div>
+<div class="copyrights">
+    &#169;2020 by AKGEC
+</div>
+</body>
+
+</html>
